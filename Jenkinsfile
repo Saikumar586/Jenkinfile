@@ -38,6 +38,20 @@ pipeline{
                 
             }
         }
+    post {
+
+        success{
+
+            echo "when build success"
+            
+        }
+    }
+    post {
+        failure{
+            
+            echo "when build failure"
+        }
+    }
 
     }
 }
