@@ -17,10 +17,11 @@ pipeline{
 
                  echo "Build stage"
 
-                 sh ''
+                 sh '''
                  ls -l
                 pwd
                 echo "hello"
+                
 
                 '''
                 
@@ -44,7 +45,7 @@ pipeline{
                 
 
                  echo "Build deploye"
-                 //error 'if failure'
+                 error 'if failure'
 
                 
             }
