@@ -17,6 +17,7 @@ pipeline{
                  echo"Build stage"
 
                  sh ls -ltr
+                 sh pwd
 
                 
             }
