@@ -2,6 +2,11 @@ pipeline{
 
     agent any
 
+    options{
+
+        timeout(time: 1 , unit: 'SECONDS')
+    }
+
     stages{
 
         stage('Build'){
@@ -18,7 +23,7 @@ pipeline{
             steps{
                 
 
-                 echo"Build stage"
+                 echo"Build test"
 
                 
             }
@@ -28,7 +33,7 @@ pipeline{
             steps{
                 
 
-                 echo"Build stage"
+                 echo"Build deploye"
 
                 
             }
