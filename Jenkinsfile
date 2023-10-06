@@ -9,7 +9,7 @@ pipeline{
         //parallelsAlwaysFailFast() 
     }
 
-    triggers{ cron('H/1 * * * *') }
+    triggers{ cron('*/5 * * * *') }
 
 
     //   parameters {
