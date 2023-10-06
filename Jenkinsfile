@@ -5,6 +5,7 @@ pipeline{
     options{
 
         timeout(time: 1 , unit: 'SECONDS')
+        retry(2)
     }
 
     stages{
@@ -16,7 +17,7 @@ pipeline{
 
                  echo "Build stage"
 
-                 sh ''' 
+                 sh ''
                  ls -l
                 pwd
                 echo "hello"
