@@ -38,20 +38,25 @@ pipeline{
                 
             }
         }
+    
     post {
+
+        always{
+            echo "checking wheather job run or failure"
+        }
 
         success{
 
             echo "when build success"
             
         }
-    }
-    post {
         failure{
-            
+
             echo "when build failure"
         }
     }
-
+    
+        
     }
+
 }
