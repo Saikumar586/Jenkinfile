@@ -40,6 +40,14 @@ pipeline{
                 
             }
         }
+      
+      stage('params') {
+            steps {
+                echo "Hello ${params.PERSON}"
+
+                echo "Biography: ${params.BIOGRAPHY}"
+            }
+      }
     
         stage('test')
         {
