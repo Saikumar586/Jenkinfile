@@ -4,7 +4,7 @@ pipeline{
 
     options{
 
-        timeout(time: 20 , unit: 'SECONDS')
+        timeout(time: 30 , unit: 'SECONDS')
        //retry(2)
         //parallelsAlwaysFailFast() 
     }
