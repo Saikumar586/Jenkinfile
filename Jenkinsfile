@@ -36,7 +36,7 @@ pipeline{
                  sh '''
                  ls -l
                 pwd
-                echo "hello"
+                echo "hello git hub web hook checking "
                 
 
                 '''
@@ -89,9 +89,5 @@ pipeline{
     
         
     }
-     
-    
-    
-
-
+         
 }
