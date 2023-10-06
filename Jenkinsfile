@@ -36,7 +36,8 @@ pipeline{
             steps{
                 
 
-                 echo"Build deploye"
+                 echo "Build deploye"
+                 4512
 
                 
             }
