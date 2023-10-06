@@ -37,7 +37,7 @@ pipeline{
                 
 
                  echo "Build deploye"
-                 4512
+                 error 'if failure'
 
                 
             }
