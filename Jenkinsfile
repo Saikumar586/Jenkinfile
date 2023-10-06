@@ -9,7 +9,8 @@ pipeline{
 
     stages{
 
-        stage('Build'){
+        stage('Build')
+        {
             steps{
                 
 
@@ -19,7 +20,8 @@ pipeline{
             }
         }
     
-        stage('test'){
+        stage('test')
+        {
             steps{
                 
 
@@ -29,7 +31,8 @@ pipeline{
             }
         }
     
-        stage('deploye'){
+        stage('deploye')
+        {
             steps{
                 
 
@@ -39,19 +42,19 @@ pipeline{
             }
         }
     
- post { 
-        always { 
-            echo 'I will always run whether job is success or not'
-        }
-        success{
-            echo 'I will run only when job is success'
-        }
-        failure{
-            echo 'I will run when failure'
-    }
+//  post { 
+//         always { 
+//             echo 'I will always run whether job is success or not'
+//         }
+//         success{
+//             echo 'I will run only when job is success'
+//         }
+//         failure{
+//             echo 'I will run when failure'
+//     }
     
         
-    }
+//     }
 
 }
 }
