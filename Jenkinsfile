@@ -16,6 +16,8 @@ pipeline{
 
                  echo"Build stage"
 
+                 sh ls -ltr
+
                 
             }
         }
@@ -37,7 +39,7 @@ pipeline{
                 
 
                  echo "Build deploye"
-                 error 'if failure'
+                 //error 'if failure'
 
                 
             }
