@@ -39,8 +39,7 @@ pipeline{
             }
         }
     
-    post {
-
+    post{
         always{
             echo "checking wheather job run or failure"
         }
