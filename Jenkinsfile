@@ -13,5 +13,26 @@ pipeline{
                 
             }
         }
+    
+        stage('test'){
+            steps{
+                
+
+                 echo"Build stage"
+
+                
+            }
+        }
+    
+        stage('deploye'){
+            steps{
+                
+
+                 echo"Build stage"
+
+                
+            }
+        }
+
     }
 }
