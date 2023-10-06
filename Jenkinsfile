@@ -5,8 +5,8 @@ pipeline{
     options{
 
         timeout(time: 1 , unit: 'SECONDS')
-       retry(2)
-        parallelsAlwaysFailFast() 
+       //retry(2)
+        //parallelsAlwaysFailFast() 
     }
 
       parameters {
