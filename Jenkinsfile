@@ -39,20 +39,15 @@ pipeline{
             }
         }
     
-    post{
-        always{
-            echo "checking wheather job run or failure"
+ post { 
+        always { 
+            echo 'I will always run whether job is success or not'
         }
-
         success{
-
-            echo "when build success"
-            
+            echo 'I will run only when job is success'
         }
         failure{
-
-            echo "when build failure"
-        }
+            echo 'I will run when failure'
     }
     
         
