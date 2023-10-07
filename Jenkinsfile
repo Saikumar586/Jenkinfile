@@ -7,6 +7,12 @@ pipeline{
         timeout(time: 30 , unit: 'SECONDS')
        //retry(2)
         //parallelsAlwaysFailFast() 
+        
+    }
+
+    environment {
+
+        USER = Saikumar
     }
 
     //triggers{ cron('*/5 * * * *') }
