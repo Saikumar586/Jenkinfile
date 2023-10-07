@@ -12,7 +12,7 @@ pipeline{
 
     environment {
 
-        USER = Saikumar
+        username = Saikumar
     }
 
     //triggers{ cron('*/5 * * * *') }
