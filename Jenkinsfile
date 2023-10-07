@@ -121,7 +121,7 @@ pipeline{
                     stage('Production2'){
 
                         when{
-                            branch 'origin/master'
+                           GIT_BRANCH= 'origin/master'
                         }
 
                         steps{
@@ -131,7 +131,7 @@ pipeline{
                     stage('Production'){
 
                         when{
-                            environment name:'username', value:'Saikumar1'
+                            environment name:'username', value:'Saikumar'
                         }
 
                         steps{
