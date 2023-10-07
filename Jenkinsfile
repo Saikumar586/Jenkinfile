@@ -81,14 +81,14 @@ pipeline{
                 
             }
         }
-        stage('Example') {
-            environment { 
-                AUTH = credentials('admin') 
-            }
-            steps {
-                sh 'printenv'
-            }
-        }
+        // stage('Example') {
+        //     environment { 
+        //         AUTH = credentials('admin') 
+        //     }
+        //     steps {
+        //         sh 'printenv'
+        //     }
+        // }
         stage('Parallel Stage') {
  
             parallel {
