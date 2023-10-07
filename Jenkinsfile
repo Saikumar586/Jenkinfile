@@ -128,6 +128,16 @@ pipeline{
                             echo "deploye"
                         }
                     }
+                    stage('Production'){
+
+                        when{
+                            environment username = 'saikumar'
+                        }
+
+                        steps{
+                            echo "deploye"
+                        }
+                    }
 
                     }
                 }
