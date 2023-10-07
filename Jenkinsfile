@@ -121,6 +121,7 @@ pipeline{
                     stage('Production2'){
 
                         when{
+                           
                            GIT_BRANCH= 'origin/master'
                         }
 
