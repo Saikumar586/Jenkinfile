@@ -131,11 +131,11 @@ pipeline{
                     stage('Production'){
 
                         when{
-                            environment name:'username', value:'Saikumar'
+                            environment name:'username', value:'Saikumar1'
                         }
 
                         steps{
-                            echo "deploye"
+                            echo "deployee if value matches"
                         }
                     }
 
