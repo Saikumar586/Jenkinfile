@@ -122,7 +122,7 @@ pipeline{
 
                         when{
                            
-                           branch= 'origin/master'
+                          branch 'master'
                         }
 
                         steps{
