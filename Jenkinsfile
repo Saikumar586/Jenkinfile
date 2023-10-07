@@ -10,7 +10,7 @@ pipeline{
         
     }
 
-    environment {
+    environment{
 
         username = 'Saikumar'
     }
@@ -51,13 +51,13 @@ pipeline{
             }
         }
       
-      stage('params') {
-            steps {
-                echo "Hello ${params.PERSON}"
+    //   stage('params') {
+    //         steps {
+    //             echo "Hello ${params.PERSON}"
 
-                echo "Biography: ${params.BIOGRAPHY}"
-            }
-      }
+    //             echo "Biography: ${params.BIOGRAPHY}"
+    //         }
+    //   }
     
         stage('test')
         {
@@ -79,6 +79,14 @@ pipeline{
                 // error 'if failure'
 
                 
+            }
+        }
+        stage('Example') {
+            environment { 
+                AUTH = credentials('ssh-auth') 
+            }
+            steps {
+                sh 'printenv'
             }
         }
         stage('Parallel Stage') {
