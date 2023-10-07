@@ -43,6 +43,7 @@ pipeline{
                  ls -l
                 pwd
                 echo "hello git hub web hook checking "
+                printenv
                 
 
                 '''
