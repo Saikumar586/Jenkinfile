@@ -122,7 +122,7 @@ pipeline{
 
                         when{
                            
-                           GIT_BRANCH= 'origin/master'
+                           branch= 'origin/master'
                         }
 
                         steps{
