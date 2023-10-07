@@ -118,6 +118,17 @@ pipeline{
                                 sh 'sleep 10'
                             }
                         }
+                    stage(Production){
+
+                        steps{
+                            when(origin/master)
+                        }
+
+                        steps{
+                            echo "deploye"
+                        }
+                    }
+
                     }
                 }
              
