@@ -118,10 +118,10 @@ pipeline{
                                 sh 'sleep 10'
                             }
                         }
-                    stage(Production){
+                    stage('Production'){
 
-                        steps{
-                            when(origin/master)
+                        when{
+                            branch 'origin/master'
                         }
 
                         steps{
