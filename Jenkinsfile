@@ -131,7 +131,7 @@ pipeline{
                     stage('Production'){
 
                         when{
-                            environment username = 'saikumar'
+                            environment (name:'ENV' username : 'saikumar')
                         }
 
                         steps{
