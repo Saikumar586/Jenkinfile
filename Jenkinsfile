@@ -83,7 +83,7 @@ pipeline{
         }
         stage('Example') {
             environment { 
-                AUTH = credentials('DevOps321') 
+                AUTH = credentials('admin') 
             }
             steps {
                 sh 'printenv'
